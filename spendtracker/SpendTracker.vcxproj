@@ -85,6 +85,7 @@
     <None Include="src\gui\resource\app.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\storage\account\Account.cpp" />
     <ClCompile Include="precompile\AssemblyInfo.cpp" />
     <ClCompile Include="src\logic\Logic.cpp" />
     <ClCompile Include="src\parser\Parser.cpp" />
@@ -94,8 +95,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\storage\Storage.cpp" />
+    <ClCompile Include="src\storage\StorageLoad.cpp" />
+    <ClCompile Include="src\storage\StorageSave.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\storage\account\Account.h" />
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -104,6 +108,8 @@
     <ClInclude Include="src\gui\resource\resource.h" />
     <ClInclude Include="precompile\stdafx.h" />
     <ClInclude Include="src\storage\Storage.h" />
+    <ClInclude Include="src\storage\StorageLoad.h" />
+    <ClInclude Include="src\storage\StorageSave.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="src\gui\resource\app.rc" />
